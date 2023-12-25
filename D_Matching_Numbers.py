@@ -3,8 +3,8 @@ n = int(input())
 for i in range(n):
     num=int(input())
     if num%2:
-        print('Yes')
         pair=list(range(1, 2*num+1))
+        print('Yes')
         to_left=num
         to_right=num+1
         while to_left >0:
