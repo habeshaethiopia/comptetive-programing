@@ -3,7 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # using selection sort
         size=len(array)
         for ind in range(size):
             min_index = ind
