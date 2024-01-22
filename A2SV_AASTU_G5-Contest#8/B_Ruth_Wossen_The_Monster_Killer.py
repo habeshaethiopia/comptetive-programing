@@ -17,4 +17,3 @@ for i in range(int(input())):
         print(pri[q[2]]-pri[q[1]-1])
     else:
         print(pris[q[2]]-pris[q[1]-1])
-    
