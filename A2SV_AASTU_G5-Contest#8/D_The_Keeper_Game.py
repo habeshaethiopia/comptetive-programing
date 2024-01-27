@@ -25,6 +25,3 @@ for _ in range(int(input())):
     for i in range(len(left)):
         ans=min(ans,left[i]+right[i])
     print(ans)
-
-    
-
