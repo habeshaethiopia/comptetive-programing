@@ -19,6 +19,7 @@ for _ in range(int(input())):
         else:
             cost+=x
         right.append(cost)
+    # print(left,right,sep='\n')
     right=right[::-1]
     ans=float('inf')
     for i in range(len(left)):
