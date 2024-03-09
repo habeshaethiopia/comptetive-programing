@@ -10,7 +10,8 @@ for _ in range(int(input())):
         x+=i
         pri[i]=x
         if x-i in pri:
-            ans+=pri[x-i    ]
+            ans+=pri[x-i]
+    print(pri)
     print( ans)
     
 
