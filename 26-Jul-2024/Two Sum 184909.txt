@@ -1,0 +1,19 @@
+# Problem: Two Sum - https://leetcode.com/problems/two-sum/
+
+class Solution {
+  List<int> twoSum(List<int> nums, int target) {
+    int n=nums.length;
+    var map={};
+    for (int i=0;i<n;i++){
+        map[nums[i]]=i;
+    } 
+    print(map);
+    for (int i=0;i<n;i++){
+        if ( nums.contains(target - nums[i]) && map[target - nums[i]] != i){
+            return [i, map[target - nums[i]]];
+        }
+        map[nums[i]]=i;
+    }
+    return [];
+  }
+}
