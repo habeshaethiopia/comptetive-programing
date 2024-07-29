@@ -1,0 +1,10 @@
+# Problem: Contains Duplicate - https://leetcode.com/problems/contains-duplicate/description/
+
+func containsDuplicate(nums []int) bool {
+    var cnt=make(map [int]int)
+    for i:=0;i<len(nums);i++{
+        cnt[nums[i]]+=1
+    }
+    // fmt.print(cnt)
+    return len(cnt)!=len(nums)
+}
